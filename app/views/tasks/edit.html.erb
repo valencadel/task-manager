@@ -1,0 +1,14 @@
+<h1>Edit your Task perri!</h1>
+
+<%= form_with model: @task do |f| %>
+  <%= f.label :tittle %>
+  <%= f.text_field :tittle %>
+
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+
+  <%= f.label :completed %>
+  <%= f.check_box :completed %>
+
+  <%= f.submit %>
+<% end %>
